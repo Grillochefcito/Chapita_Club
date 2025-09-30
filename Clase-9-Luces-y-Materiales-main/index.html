@@ -1,0 +1,46 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Viewer - Voxel Art</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body { margin: 0; display: flex; flex-direction: column; align-items: center; background: #1e1e2e; }
+    model-viewer { width: 500px; height: 500px; margin: 20px; }
+  </style>
+</head>
+<body>
+  <h1 style="color:white;">Mis Modelos en Voxel</h1>
+
+  <!-- Modelo 1 -->
+  <model-viewer src="./assets/modelos-glb/computador.glb"
+                alt="Computador voxel"
+                auto-rotate
+                camera-controls
+                ar
+                shadow-intensity="1">
+  </model-viewer>
+
+  <!-- Modelo 2 -->
+  <model-viewer src="./assets/modelos-glb/camara.glb"
+                alt="Camara voxel"
+                auto-rotate
+                camera-controls
+                ar
+                shadow-intensity="1">
+  </model-viewer>
+
+  <!-- Modelo 3 -->
+  <model-viewer src="./assets/models/gbl/personaje.glb"
+                alt="Personaje voxel"
+                auto-rotate
+                camera-controls
+                ar
+                shadow-intensity="1">
+  </model-viewer>
+
+</body>
+</html>
+```
